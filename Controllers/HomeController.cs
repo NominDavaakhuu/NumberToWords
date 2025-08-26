@@ -25,8 +25,10 @@ namespace NumberToWords.Controllers
             var words = NumberToWords((long)number);
             var cents = (int)((number - Math.Floor(number)) * 100);
 
+            ViewBag.InputNumber = number;
             ViewBag.Words = $"{words} Dollar{(number == 1 ? "" : "s")}{(cents > 0 ? $" and {NumberToWords(cents)} Cent{(cents == 1 ? "" : "s")}" : "")}";
             return View("Index");
+
         }
 
         private string NumberToWords(long number)
@@ -51,6 +53,12 @@ namespace NumberToWords.Controllers
             };
 
             string words = "";
+
+            if ((number / 1000000000) > 0)
+            {
+                words += NumberToWords(number / 1000000000) + " Billion ";
+                number %= 1000000000;
+            }
 
             if ((number / 1000000) > 0)
             {
