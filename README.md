@@ -29,7 +29,7 @@ Bootstrap 5 (for styling)
 Visual Studio or VS Code
 
 📁 Folder Structure
-NumberToInteger/
+NumberToWords/
 ├── Controllers/
 │   └── HomeController.cs
 ├── Models/
@@ -59,13 +59,13 @@ Git (optional)
 
 Clone the repository
 
-git clone https://github.com/yourusername/NumberToInteger.git
-cd NumberToInteger
+git clone https://github.com/NominDavaakhuu/NumberToWords.git
+cd NumberToWords
 
 
 Open the project
 
-In Visual Studio: Open NumberToInteger.sln
+In Visual Studio: Open NumberToWords.sln
 
 In VS Code: Open the folder using File > Open Folder
 
@@ -80,7 +80,7 @@ dotnet run
 
 Visit the app in your browser
 
-Navigate to: https://localhost:5001 or http://localhost:5000
+Navigate to: https://localhost:5001 or http://localhost:5000 (can differ)
 
 🌐 How to Use the App
 
